@@ -1,0 +1,21 @@
+//this is the second part that I made in my lunchbreak at work.
+function computer_choice (){
+    let numAleatorio = Math.random()
+  if (Math.random (1-0.01) + 0.01<=0.33){
+    console.log ("pedra")
+  }
+  else if (Math.random (1-0.01) + 0.01<=0.66) {
+    console.log("papel")}
+    else {
+        console.log ("tesoura")
+    }
+  }
+  computer_choice()
+   function gameWinner (){
+    if computer_choice() === "playerchoice" {
+        console.log("its a tie!!!!")
+    }
+    if else (computer)
+    //i've stop here =D
+  //this is only the computer (your adversary) in rock,scissor and paper game.
+  

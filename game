@@ -1,21 +1,55 @@
-//this is the second part that I made in my lunchbreak at work.
-function computer_choice (){
-    let numAleatorio = Math.random()
-  if (Math.random (1-0.01) + 0.01<=0.33){
-    console.log ("pedra")
+const opcoes = ["pedra" , "papel" , "tesoura" ]
+function escolha_player(escolha){
+    switch(escolha){
+        case opcoes[0]:
+            console.log("voce escolheu pedra")
+            break;
+        case opcoes[1]:
+            console.log("voce escolheu papel")
+            break;
+        case opcoes[2]:
+            console.log("voce escolheu tesoura")
+            break;
+        default:
+            console.log("isso nao eh uma opcao")
+            break;
+    }
+    return  escolha_player = escolha
+}
+escolha_player(opcoes[0])
+
+function escolha_computador() {
+    let computador = Math.floor(Math.random() * (opcoes.length))
+   console.log (`computador escolheu ${opcoes[computador]}`)
+   return escolha_computador = `${opcoes[computador]}`
   }
-  else if (Math.random (1-0.01) + 0.01<=0.66) {
-    console.log("papel")}
+
+ escolha_computador ()
+
+ function resultado_jogo (escolha_player,escolha_computador){
+    if (escolha_player === escolha_computador){
+        console.log("foi um empate")
+    }
+    else if ( escolha_player === opcoes[0] , escolha_computador === opcoes[1]) {
+        console.log("computador venceu")
+    }
+    else if (escolha_player === opcoes[0] ,  escolha_computador === opcoes[2]){
+        console.log("player venceu")
+    }
+    else if (escolha_player === opcoes[1] , escolha_computador === opcoes [0]){
+        console.log("player venceu")
+    }
+    else if (escolha_player === opcoes[1], escolha_computador === opcoes [2]){
+        console.log("computador venceu")
+    }
+    else if (escolha_player === opcoes[2], escolha_computador === opcoes[0]){
+        console.log('computador venceu')
+    }
+    else if (escolha_player === opcoes[2], escolha_computador === opcoes[1]){
+        console.log("player venceu")
+    }
     else {
-        console.log ("tesoura")
+        console.log ("tem algo de errado")
     }
-  }
-  computer_choice()
-   function gameWinner (){
-    if computer_choice() === "playerchoice" {
-        console.log("its a tie!!!!")
-    }
-    if else (computer)
-    //i've stop here =D
-  //this is only the computer (your adversary) in rock,scissor and paper game.
-  
+ }
+ resultado_jogo(escolha_player,escolha_computador )
